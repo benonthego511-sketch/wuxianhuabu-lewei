@@ -1,0 +1,23 @@
+{
+  "name": "infinite-canvas-image-skill",
+  "displayName": "Infinite Canvas Image Generator",
+  "version": "1.0.0",
+  "description": "Installable infinite canvas image generation tool with node graph editing, multi-reference images, role-based references, and product isolation.",
+  "platforms": ["windows", "macos"],
+  "entry": {
+    "type": "local_web_app",
+    "command": "infinite-canvas start",
+    "defaultUrl": "http://localhost:3000",
+    "healthcheck": "http://localhost:3000/api/health"
+  },
+  "capabilities": [
+    "web_ui",
+    "infinite_canvas",
+    "multi_reference_generation",
+    "node_graph",
+    "product_reference_isolation",
+    "canvas_import_export",
+    "local_history",
+    "http_api"
+  ]
+}
